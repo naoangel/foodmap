@@ -1,80 +1,250 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title></title>
-<!-- CSS Bootstrap -->	
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- Google fonts --> 	
-	<link href="https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700" rel="stylesheet"> 
-<!-- Icons from fontawesome -->	
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-<!-- own css -->
-	<link rel="stylesheet" href="assets/css/style.css">
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+	 <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Mi css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- Modal IT -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Comida Italiana </h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13320.304269276896!2d-70.6157380020609!3d-33.42126114001088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants+italianos!5e0!3m2!1ses!2scl!4v1513187633962" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+        <h5>It's me Mario ~</h5> 
+
+        <row>
+        	<div class="col-sm-6 col-xs-6">
+					 	<p>Focaccia al romero (al rosmarino): sus ingredientes básicos combinados con prosciutto.</p>
+        	</div>	
+        	<div class="col-sm-6 col-xs-6">
+					 	<p>Av. Fontanera s/n. Servicio Delivery. Valores entre $5.000 y $20.000 p/p</p>
+        	</div>
+				</row>
+			
+
+			</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ordenar ahora</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Fin Modal IT-->
+
+<!--Modal JP-->
+<div class="modal fade" id="myModalJpn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Comida Japonesa </h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13319.097839142783!2d-70.62879927248032!3d-33.429123992115976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+japonesa!5e0!3m2!1ses!2scl!4v1513189692165" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+        <h5> いらっしゃいませ~</h5> 
+
+        <row>
+        	<div class="col-sm-6 col-xs-6">
+					 	<p>Totalmente recomendado el sukiyaki. </p>
+        	</div>	
+        	<div class="col-sm-6 col-xs-6">
+					 	<p>Av. Sakura en flor s/n. Servicio Delivery. Valores entre $5.000 y $30.000 p/p</p>
+        	</div>
+				</row>
+			
+
+			</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ordenar Ahora</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin modal JPN-->
+
+<!-- Modal MEX -->
+	<div class="modal fade" id="myModalMex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+      	<div class="modal-header">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	<h4 class="modal-title" id="myModalLabel">Comida Mexicana </h4>
+      	</div>
+      	<div class="modal-body">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13319.103429479988!2d-70.62879927524894!3d-33.42908756112361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+mexicana!5e0!3m2!1ses!2scl!4v1513190748665" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+        	<h5> Andale Andale Andale~</h5> 
+
+        	<row>
+        		<div class="col-sm-6 col-xs-6">
+					 		<p>Taquitos, tamales, posole, Ven a vivir la sensación mexicana. </p>
+            </div>	
+        	  <div class="col-sm-6 col-xs-6">
+					 	  <p>Av. Virgencita de Guadalupe no me desampares s/n. Servicio Delivery. Valores entre $.000 p/p</p>
+        	  </div>
+				  </row>
+			
+ 				</div>
+
+      	<div class="modal-footer">
+       	 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+       	 <button type="button" class="btn btn-primary">Ordenar Ahora</button>
+     		 </div>
+    	</div>
+  	</div>
+</div>
+<!-- Fin Modal MEX -->
+
+<!-- MODAL THAI -->
+	<div class="modal fade" id="myModalThai" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+      	<div class="modal-header">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	<h4 class="modal-title" id="myModalLabel">Comida Thai</h4>
+      	</div>
+      	<div class="modal-body">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13319.103429479988!2d-70.62879927524894!3d-33.42908756112361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomida+mexicana!5e0!3m2!1ses!2scl!4v1513190748665" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+        	<h5> El Muay Thai no se come~</h5> 
+
+        	<row>
+        		<div class="col-sm-6 col-xs-6">
+					 		<p>Algo picante pero con una mezcla de sabores, dulces, salados y ácidos. Exquisito y exótico </p>
+            </div>	
+        	  <div class="col-sm-6 col-xs-6">
+					 	  <p>Av. Yo solía creer que el Muay Thai se comía s/n. Servicio Delivery. Valores entre $5.000 y $25.000 p/p</p>
+        	  </div>
+				  </row>
+			
+ 				</div>
+
+      	<div class="modal-footer">
+       	 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+       	 <button type="button" class="btn btn-primary">Ordenar Ahora</button>
+     		 </div>
+    	</div>
+  	</div>
+</div>
+
+
+
+
 <!-- Sección Uno -->	
-	<section id="uno">
+	<section class="uno">
 		<container>
 	 		<row>
-	 			<div class="col-sm-12 centext">
-	 				<h1>F o o d M a p <span class="fa fa-cutlery"></span></h1>
-	 				<div class="loader"></div>
+	 			<div class="col-sm-12 col-xs-12 centext">
+	 				<h1>F o o d M a p</h1>
+					<div class="loader"></div>
+	 			
 	 			</div>
 	 		</row>
 	 	</container>
 	</section>
 
 <!-- Media Sección Dos-->
-	<section id="dos">
+	<section class="dos">
 		<container>
 			<row>
-				<div class="col-sm-12">
+				<div class="col-sm-12 col-xs-12">
 					<p>FoodMap</p>
 				</div>
 			</row>
 		</br>
-			<div class="container">		
 			  <row>	
 				  <hr>
 			  </row>
     	</div>
 		</br>	
 			<row>	
-				<div class="col-sm-8 offset-sm-2">
+				<div class="col-sm-8 offset-sm-2 col-xs-8 offset-xs-2">
 	 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53271.89019291026!2d-70.65991360000001!3d-33.43645655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513089580489" id="soyelmapa" frameborder="0" style="border:0" allowfullscreen></iframe>
 	 			</div>
       </row>
     </br>
 			<row>
-				  <div class="input-field col-sm-12">
+				  <div class="input-field col-sm-12 col-xs-12">
     				<select>
       				<option value="" disabled selected>Tus restaurants más cercanos</option>
-      				<option value="1">Mexican Food: </option>
-      				<option value="2">Italian Food:  </option>
-      				<option value="3">Japanese food: </option>
+      				<option value="1">Comida Mexicana</option>
+      				<option value="2">Comida Italiana</option>
+      				<option value="3">Comida Japonesa</option>
+      				<option value="4">Comida Thai</option>
     				</select>
-    			
-  			</div>
+    			</div>	
 			</row>
-				<div class="col-sm-8 off-sm-2 imgBox">	
-					<div class="img1"></div>
-					<div class="img2"></div>
-					<div class="img3"></div>
+		</br>
+			<row >
+				<div class="col-sm-8 off-sm-2 col-xs-8 off-xs-2">
+					<div class="contenedor">
+						<img class="img-shape itfood" src="assets/images/italia.jpg" alt="Mamma mía" data-toggle="modal" data-target="#myModal">
+						<div class="itfood-over">
+							<p> Comida Italiana</p>
+						</div>	
+					</div>
+					<img class="img-shape jpfood" src="assets/images/sukiyaki-2.jpg" alt="Hanamichi" data-toggle="modal" data-target="#myModalJPN">
+					<img class="img-shape itfood" src="assets/images/lasagna.jpg" alt="Mario" data-toggle="modal" data-target="#myModal">
+				</div>
+			</row>
+			<row >
+				<div class="col-sm-8 off-sm-2 col-xs-8 off-xs-2">
+					<img class="img-shape mxfood" src="assets/images/mex1.jpg" alt="Híjole" data-toggle="modal" data-target="#myModalMex" >
+				  <img class="img-shape jpfood" src="assets/images/nigiris.jpg" alt="sakana kai" data-toggle="modal" data-target="#myModalJPN">
+					<img class="img-shape itfood" src="assets/images/pizza.jpg" alt="Luigi" data-toggle="modal" data-target="#myModal">
 
 				</div>
-	 			
-	 		
-	 		</row>
-	 	</container>
-	</section>	 	
+			</row>	
+			<row >
+				<div class="col-sm-8 off-sm-2 col-xs-8 off-xs-2">
+					<img class="img-shape jpfood" src="assets/images/moar nigiris.jpg" alt="kakikukeko" data-toggle="modal" data-target="#myModalJpn">
+					<img class="img-shape mxfood" src="assets/images/mex2.jpg" alt="Andale Andale" data-toggle="modal" data-target="#myModalMex">
+					<img class="img-shape tifood" src="assets/images/tai 4.jpg" data-toggle="modal" data-target="#myModalThai">
+				</div>
+			</row>	
+			<row >
+				<div class="col-sm-4 off-sm-2 col-xs-4 off-xs-2">
+					
+				</div>
+				<div class="col-sm-4 off-sm-1 col-xs-4 off-xs-1">
+					
+				</div>
 
-<!--Jquery Script-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			</row>		 			
+	 		
+	 		
+	 	</container>
+	</section>
+
+ 
+
+
+
+<!-- js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <!-- own js -->  
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
