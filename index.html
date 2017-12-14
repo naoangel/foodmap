@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+   <title>FoodMap</title>
 	 <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -41,7 +41,7 @@
 			</div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-default close-btn" data-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Ordenar ahora</button>
       </div>
     </div>
@@ -154,88 +154,102 @@
 
 <!-- Sección Uno -->	
 	<section class="uno">
-		<container>
-	 		<row>
-	 			<div class="col-sm-12 col-xs-12 centext">
+		<div class="container">
+	 		<div class="row">
+	 			<div class="col-sm-12 col-xs-12 text-center centext">
 	 				<h1>F o o d M a p</h1>
 					<div class="loader"></div>
-	 			
 	 			</div>
-	 		</row>
-	 	</container>
+	 		</div>
+	 	</div>
 	</section>
 
 <!-- Media Sección Dos-->
 	<section class="dos">
-		<container>
-			<row>
+		<div class="container">
+			<div class="row">
 				<div class="col-sm-12 col-xs-12">
-					<p>FoodMap</p>
+					<p class="subtitle">FoodMap</p>
 				</div>
-			</row>
+			</div>
 		</br>
-			  <row>	
-				  <hr>
-			  </row>
+			  <div class="row">	
+			  	<div class="col-xs-12"><hr></div>
+				  
+			  </div>
     	</div>
 		</br>	
-			<row>	
-				<div class="col-sm-8 offset-sm-2 col-xs-8 offset-xs-2">
+			<div class="row">	
+				<div class="col-md-12 col-xs-12">
 	 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53271.89019291026!2d-70.65991360000001!3d-33.43645655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513089580489" id="soyelmapa" frameborder="0" style="border:0" allowfullscreen></iframe>
 	 			</div>
-      </row>
+      </div>
     </br>
-			<row>
+			<div class="row">
 				  <div class="input-field col-sm-12 col-xs-12">
-    				<select>
+    				<select id="selector">
       				<option value="" disabled selected>Tus restaurants más cercanos</option>
       				<option value="1">Comida Mexicana</option>
       				<option value="2">Comida Italiana</option>
       				<option value="3">Comida Japonesa</option>
       				<option value="4">Comida Thai</option>
     				</select>
+    				<div id="container"></div>
     			</div>	
-			</row>
+			</div>
 		</br>
-			<row >
-				<div class="col-sm-8 off-sm-2 col-xs-8 off-xs-2">
+			<div class="row" id="food-box">
+				<div class="col-xs-6 col-sm-6 food">
 					<div class="contenedor">
 						<img class="img-shape itfood" src="assets/images/italia.jpg" alt="Mamma mía" data-toggle="modal" data-target="#myModal">
 						<div class="itfood-over">
 							<p> Comida Italiana</p>
 						</div>	
 					</div>
-					<img class="img-shape jpfood" src="assets/images/sukiyaki-2.jpg" alt="Hanamichi" data-toggle="modal" data-target="#myModalJPN">
-					<img class="img-shape itfood" src="assets/images/lasagna.jpg" alt="Mario" data-toggle="modal" data-target="#myModal">
-				</div>
-			</row>
-			<row >
-				<div class="col-sm-8 off-sm-2 col-xs-8 off-xs-2">
-					<img class="img-shape mxfood" src="assets/images/mex1.jpg" alt="Híjole" data-toggle="modal" data-target="#myModalMex" >
-				  <img class="img-shape jpfood" src="assets/images/nigiris.jpg" alt="sakana kai" data-toggle="modal" data-target="#myModalJPN">
-					<img class="img-shape itfood" src="assets/images/pizza.jpg" alt="Luigi" data-toggle="modal" data-target="#myModal">
+					<div class="col-xs-6 col-sm-6 food">
+						<img class="img-shape jpfood" src="assets/images/RAMEN.jpg" alt="aki" data-toggle="modal" data-target="#myModalJpn">
+          </div>
+        </div>
+		  
 
+				<div class="col-xs-6 col-sm-6 food">
+					<img class="img-shape itfood" src="assets/images/lasagna.jpg" alt="Mario" data-toggle="modal" data-target="#myModal">
+				</div>				
+				<div class="col-xs-6 col-sm-6 food">
+					<img class="img-shape mxfood" src="assets/images/mex1.jpg" alt="Híjole" data-toggle="modal" data-target="#myModalMex" >
 				</div>
-			</row>	
-			<row >
-				<div class="col-sm-8 off-sm-2 col-xs-8 off-xs-2">
+			
+			
+				<div class="col-xs-6 col-sm-6 food">
+				  <img class="img-shape jpfood" src="assets/images/ROLLS.jpg" alt="hana" data-toggle="modal" data-target="myModalJpn">
+				</div>  
+				<div class="col-xs-6 col-sm-6 food">  
+					<img class="img-shape itfood" src="assets/images/pizza.jpg" alt="Luigi" data-toggle="modal" data-target="#myModal">
+				</div>
+			
+				<div class="col-xs-6 col-sm-6 food">
 					<img class="img-shape jpfood" src="assets/images/moar nigiris.jpg" alt="kakikukeko" data-toggle="modal" data-target="#myModalJpn">
+				</div>
+				<div class="col-xs-6 col-sm-6 food">	
 					<img class="img-shape mxfood" src="assets/images/mex2.jpg" alt="Andale Andale" data-toggle="modal" data-target="#myModalMex">
+				</div>
+			
+			
+				<div class="col-xs-6 col-sm-6 food">
 					<img class="img-shape tifood" src="assets/images/tai 4.jpg" data-toggle="modal" data-target="#myModalThai">
 				</div>
-			</row>	
-			<row >
-				<div class="col-sm-4 off-sm-2 col-xs-4 off-xs-2">
-					
+			  <div class="col-xs-6 col-sm-6 food">
+			  	<img class="img-shape tifood" src="assets/images/tai dos.jpg" data-toggle="modal" data-target="#myModalThai">
 				</div>
-				<div class="col-sm-4 off-sm-1 col-xs-4 off-xs-1">
-					
+				<div class="col-xs-6 col-sm-6 food">
+					<img class="img-shape" src="assets/images/Tacos 700x420.jpg" data-toggle="modal" data-target="#myModalMex">
 				</div>
 
-			</row>		 			
+
+			</div>		 			
 	 		
 	 		
-	 	</container>
+	 	</div>
 	</section>
 
  
