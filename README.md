@@ -23,7 +23,7 @@ través de un modal.
 X 6. Una vez cerrado el modal debe volver a la vista principal. 
 
 
-[home]!(https://i.imgur.com/XSpVaFS.png)
+![home](https://i.imgur.com/XSpVaFS.png)
 
 Trabajo solo vista para celular -> naoangel.github.io/foodmap
 
