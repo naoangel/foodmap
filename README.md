@@ -29,7 +29,7 @@ través de un modal.
 Para su creación fueron utilizados, Javascript, HTML5 y CSS.
 
 ## Producto
-Trabajo solo vista para celular -> naoangel.github.io/foodmap
+Trabajo solo vista para celular -> http://naoangel.github.io/foodmap
 
 ![home](https://i.imgur.com/XSpVaFS.png)
 
