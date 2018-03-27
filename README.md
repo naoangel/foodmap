@@ -1,7 +1,11 @@
 
 
 # Foodmap
-4to (A) Reto del código del Tercer Sprint. 
+4to (A) Reto del código del Tercer Sprint.
+Enid Veneros. Estudiante en Laboratoria.
+
+![foodmap](https://user-images.githubusercontent.com/32294366/37963433-9fa479e2-3194-11e8-8495-184bc1d79431.png)
+
 ## Instrucciones
 **★** Crea una web-app que a través de un input pueda filtrar los restaurantes que se encuentran cerca de ti 
 (Tú decides la estructura que tendrán tus datos, puedes crear una lista de restaurantes en un arreglo, en un objeto, 
@@ -20,7 +24,7 @@ cambio de imagen, información, etc).
 través de un modal. 
 **★**Una vez cerrado el modal debe volver a la vista principal. 
 
-
+## Producto
 ![home](https://i.imgur.com/XSpVaFS.png)
 
 Trabajo solo vista para celular -> naoangel.github.io/foodmap
