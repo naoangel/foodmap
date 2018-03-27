@@ -24,11 +24,16 @@ cambio de imagen, información, etc).
 través de un modal. 
 **★**Una vez cerrado el modal debe volver a la vista principal. 
 
+
+## Tecnologías Utilizadas
+Para su creación fueron utilizados, Javascript, HTML5 y CSS.
+
 ## Producto
+Trabajo solo vista para celular -> naoangel.github.io/foodmap
+
 ![home](https://i.imgur.com/XSpVaFS.png)
 
-Trabajo solo vista para celular -> naoangel.github.io/foodmap
-Para su creación fueron utilizados, Javascript, HTML5 y CSS.
+
 
 
 
