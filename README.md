@@ -1,7 +1,10 @@
 
 
 # Foodmap
-4to (A) Reto del código del Tercer Sprint.
+
+Laboratoria 2018.
+Proyecto de webapp mobile size para chequear restaurants (fictisios) de distintos tipos de comida.
+4to (A) Reto del código del Tercer Sprint.7
 Enid Veneros. Estudiante en Laboratoria.
 
 ![foodmap](https://user-images.githubusercontent.com/32294366/37963433-9fa479e2-3194-11e8-8495-184bc1d79431.png)
